@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Reimbursement Request Form</h2>
+  <form action="EmployeeServlet" method = "post">
+    <div class="form-group">
+      <label for="eventtype">Event Type</label>
+      <select class="form-control" name = "eventtype" id="eventtype">
+        <option value = "1">University Courses</option>
+        <option value = "2">Seminars</option>
+        <option value = "3">Cert Prep</option>
+        <option value = "4">Certification</option>
+        <option value = "5">Technical Training</option>
+        <option value = "6">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date">Enter starting date</label>
+      <input type="text" class="form-control" id="date" placeholder="Format: DD-MM-YY" name="date">
+    </div>
+    <div class="form-group">
+      <label for="location">Enter course location</label>
+      <input type="text" class="form-control" id="location" name="location">
+    </div>
+    <div class="form-group">
+      <label for="justification">Enter justification</label>
+      <input type="text" class="form-control" id="justification" name="justification">
+    </div>
+     <div class="form-group">
+      <label for="cost">Enter courseCost</label>
+      <input type="text" class="form-control" id="cost" name="cost">
+    </div>
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
